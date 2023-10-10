@@ -3,7 +3,8 @@ $basePath = "C:\\Users\\braz9\\Desktop\\projects\\laracasts\\object-oriented-pri
 require_once $basePath . "functions.php";
 
 class Team {
-    public $name;
+    protected $name;
+    protected $members = [];
 
     public function __construct($name)
     {
@@ -14,9 +15,22 @@ class Team {
     {
         return $this->name;
     }
+
+    public function add($name) {
+
+     $this->members[] = $name;
+
+    }
+
+    public function members() {
+      return $this->members;
+    }
 }
 
-$member = new Team("victor");
-$memberName = $member->name();
+$acme = new Team("victor");
+$acme->name();
+$acme->add('ronaldo');
+$acme->add('messi');
+$acme->members();
 
-dd($memberName);
+dd($acme->members());
