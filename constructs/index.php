@@ -6,9 +6,10 @@ class Team {
     protected $name;
     protected $members = [];
 
-    public function __construct($name)
+    public function __construct($name, $members)
     {
         $this->name = $name;
+        $this->members = $members;
     }
 
     public function name()
@@ -18,19 +19,17 @@ class Team {
 
     public function add($name) {
 
-     $this->members[] = $name;
+      $this->members[] = $name;
 
-    }
+     }
 
     public function members() {
       return $this->members;
     }
 }
 
-$acme = new Team("victor");
-$acme->name();
-$acme->add('ronaldo');
-$acme->add('messi');
-$acme->members();
+$acme = new Team("victor", [
+  'Messi', 'Kaka'
+]);
 
 dd($acme->members());
