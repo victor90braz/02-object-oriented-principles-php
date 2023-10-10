@@ -40,4 +40,31 @@ $acme->add('gabigol');
 $start = Team::start('Flamengo', [
   'dida', 'cafu', 'lucio']);
 
-dd($start);
+// dd($start);
+
+
+class Member {
+
+  protected $name;
+
+  public function __construct($name) {
+    $this->name = $name;
+  }
+
+  public function lastViewed() {
+
+  }
+
+}
+
+$teamBarcelona = Team::start('Barcelona', [
+  new Member('ronaldinho'),
+  new Member('cr7')
+]);
+
+$teamRealMadrid = Team::start('Barcelona', [
+  new Member('belinghan'),
+  new Member('kepa')
+]);
+
+dd($teamRealMadrid->members());
