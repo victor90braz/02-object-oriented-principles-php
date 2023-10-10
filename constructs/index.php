@@ -6,7 +6,7 @@ class Team {
     protected $name;
     protected $members = [];
 
-    public function __construct($name, $members){
+    public function __construct($name, $members=[]){
         $this->name = $name;
         $this->members = $members;
     }
