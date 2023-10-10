@@ -16,6 +16,10 @@ This project demonstrates the use of object-oriented principles in PHP, featurin
 
 This project showcases object-oriented programming principles in PHP, providing implementations of the `Team` and `Member` classes. It illustrates concepts like constructors, static methods, encapsulation, and method abstraction.
 
+## Run a local PHP server in the "constructs" directory:
+
+php -S localhost:8888 -t constructs
+
 ## Classes
 
 ## GitHub Repository
