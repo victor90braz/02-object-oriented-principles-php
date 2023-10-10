@@ -18,6 +18,10 @@ This project showcases object-oriented programming principles in PHP, providing 
 
 ## Classes
 
+## GitHub Repository
+
+The project is hosted on GitHub. You can find the repository [here](https://github.com/victor90braz/02-object-oriented-principles-php).
+
 ### Team Class
 
 The `Team` class represents a sports team and includes the following methods:
