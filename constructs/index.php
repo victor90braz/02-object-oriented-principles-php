@@ -32,4 +32,6 @@ $acme = new Team("victor", [
   'Messi', 'Kaka'
 ]);
 
+$acme->add('gabigol');
+
 dd($acme->members());
